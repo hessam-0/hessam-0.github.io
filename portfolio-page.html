@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Space Mono", monospace;
+            line-height: 1.6;
+            background: #f5f5f0;
+            color: #2d2d2a;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            cursor: default;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            font-weight: 900;
+            color: #2d2d2a;
+            transform: rotate(-2deg);
+            background: #e6e6d4;
+            padding: 2rem;
+            border: 4px solid #2d2d2a;
+            box-shadow: 8px 8px 0 #2d2d2a;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 2rem 0;
+            text-transform: uppercase;
+            color: #2d2d2a;
+            background: #d4d6c8;
+            padding: 1rem;
+            display: inline-block;
+            transform: rotate(1deg);
+            border: 3px solid #2d2d2a;
+        }
+
+        nav {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #c9cba3;
+            border: 4px solid #2d2d2a;
+            box-shadow: 8px 8px 0 #2d2d2a;
+        }
+
+        nav a {
+            color: #2d2d2a;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            transition: all 0.2s;
+            padding: 0.5rem 1rem;
+            border: 3px solid transparent;
+        }
+
+        nav a:hover {
+            background: #2d2d2a;
+            color: #c9cba3;
+            border: 3px solid #2d2d2a;
+            transform: translate(-4px, -4px);
+            box-shadow: 4px 4px 0 #2d2d2a;
+        }
+
+        section {
+            margin: 4rem 0;
+            padding: 2rem;
+            background: #f5f5f0;
+            border: 4px solid #2d2d2a;
+            box-shadow: 12px 12px 0 #2d2d2a;
+            transition: transform 0.2s;
+        }
+
+        section:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 16px 16px 0 #2d2d2a;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: #e4e6c3;
+            border: 4px solid #2d2d2a;
+            padding: 1.5rem;
+            transition: all 0.2s;
+            box-shadow: 8px 8px 0 #2d2d2a;
+        }
+
+        .project-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 #2d2d2a;
+            background: #dadebc;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2d2d2a;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #b8baa2;
+            color: #2d2d2a;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #2d2d2a;
+            box-shadow: 6px 6px 0 #2d2d2a;
+            transition: all 0.2s;
+            margin-top: 1rem;
+        }
+
+        .cv-button:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0 #2d2d2a;
+            background: #a5a692;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 1rem 0;
+            }
+
+            section {
+                margin: 2rem 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hessam</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project</h3>
+                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project</h3>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project</h3>
+                <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla sed consectetur.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cv">
+        <h2>CV</h2>
+        <p>Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+        <a href="your-cv.pdf" class="cv-button" target="_blank">Download CV</a>
+    </section>
+</body>
+</body>
+</html>
